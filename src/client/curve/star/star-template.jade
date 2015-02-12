@@ -1,0 +1,7 @@
+div
+	.quarterlist
+		ul
+			li(ng-repeat="(quarter, a) in state.quarters")
+				a(ui-sref="star.lightcurve({q: quarter})") {{ quarter }}
+	
+	ui-view

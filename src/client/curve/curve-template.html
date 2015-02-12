@@ -1,0 +1,18 @@
+<div class="maingraph">
+	<svg height="100%" width="100%"
+		ng-init="points = 10000"
+		graph-scales="{
+			x: ['linear', 0, state.cadence.length - 1],
+			y: ['linear', state.max, state.min]
+		}"
+		style="
+			background-color: black;
+		"
+	>
+		<circle ng-repeat="cadence in state.cadence"
+			center="$scales([ $index, cadence[2] ])"
+			radius="1"
+			fill="red"
+		/>
+	</svg>
+</div>

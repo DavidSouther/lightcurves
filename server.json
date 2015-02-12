@@ -1,0 +1,29 @@
+{
+  "stassets": {
+    "verbose": true,
+    "root": "./src/client",
+    "vendors": {
+      "prefix": ["./src/client", "./node_modules"],
+      "js": [
+        "injector.js",
+        "flaming-sansa/www/templates.js",
+        "flaming-sansa/www/application.js",
+        "d3-util/d3.min.js"
+      ],
+      "css": []
+    },
+    "scripts": {
+      "types": [
+        "component"
+      ]
+    }
+  },
+  "tls": false,
+  "routing": [
+    "./src/server/allow.coffee",
+    "./src/server/**/*route.{js,coffee}"
+  ],
+  "static": {
+    "/data": "./src/data"
+  }
+}

@@ -1,0 +1,8 @@
+ul
+	li
+		input(
+			ng-model="search",
+			placeholder="By KID..."
+		)
+	li(ng-repeat="(star, quarters) in state.stars.list | filter:{star: search}")
+		a(ui-sref="star({kid: star})") {{ star }}
