@@ -1,8 +1,8 @@
 # Light Curve and Exoplanets
 
 *Manuals for the Kepler public data*
--http://archive.stsci.edu/kepler/manuals/Data_Characteristics.pdf
--http://archive.stsci.edu/kepler/manuals/archive_manual.pdf
+ - http://archive.stsci.edu/kepler/manuals/Data_Characteristics.pdf
+ - http://archive.stsci.edu/kepler/manuals/archive_manual.pdf
 
 ![The Exoplanet Gold Rush](http://i.imgur.com/4S65Wo2.gif)
 
@@ -17,12 +17,12 @@
 			- Minimum three passes to be a candidate, and then lots of processing.
 	- The Field of View
 		- 156,000 Target Stars
-			- ![Schematic](http://upload.wikimedia.org/wikipedia/commons/0/07/Kepler_FOV_hiRes.jpg)
-			- ![Wide angle](http://upload.wikimedia.org/wikipedia/commons/2/28/MilkywaykeplerfovbyCRoberts.jpg)
-			- ![Tight angle](http://upload.wikimedia.org/wikipedia/commons/0/02/329161main_fullFFIHot300.png)
-			- ![Volume](http://upload.wikimedia.org/wikipedia/commons/b/be/LombergA1024.jpg)
+			- [Schematic](http://upload.wikimedia.org/wikipedia/commons/0/07/Kepler_FOV_hiRes.jpg)
+			- [Wide angle](http://upload.wikimedia.org/wikipedia/commons/2/28/MilkywaykeplerfovbyCRoberts.jpg)
+			- [Tight angle](http://upload.wikimedia.org/wikipedia/commons/0/02/329161main_fullFFIHot300.png)
+			- [Volume](http://upload.wikimedia.org/wikipedia/commons/b/be/LombergA1024.jpg)
 	- The Instruments
-		- ![CCD detectors](http://upload.wikimedia.org/wikipedia/commons/2/2a/Keplerspacecraft-FocalPlane-cutout.svg) and *very* careful calibration, 1 pixel per star.
+		- [CCD detectors](http://upload.wikimedia.org/wikipedia/commons/2/2a/Keplerspacecraft-FocalPlane-cutout.svg) with *very* careful calibration, 1 pixel per star.
 	- The Data
 		- Released Publicly
 		- FITS - open format (Show .tbl)
@@ -30,10 +30,10 @@
 	- Loading Data
 		- [Retrieve][retrieval_instructions]
 		- Pre-massage
-			- hah [bash][bash_extract_rename] & [python][] :)
+			- hah [bash](https://github.com/DavidSouther/lightcurves/blob/master/src/data/koi/load.sh) & [python](https://github.com/DavidSouther/lightcurves/blob/master/src/data/koi/process.py) :)
 		- Small APIs and static JSON.
 	- Scatter Plots
-		- <circle cx cy r>
+		- circle cx, cy, r
 		- Scales
 			- [Lots of d3 code.](https://github.com/davidsouther/d3-util)
 			- Exposes d3’s scales on $scope.$scales
