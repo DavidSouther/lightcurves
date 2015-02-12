@@ -1,4 +1,14 @@
+### You'll need to [sudo] pip install astropy, ~6mb
 from astropy.io import fits
+
+### Easiest way to run this is first do `load.sh`, then
+
+'''
+for D in KOI* ; do for F in ${D}/*.fits ; do python process.py $F > ${F/\-[0-9]*/}.json ; done ; done
+'''
+
+### A lot of processing later, you'll have all the data in the right places!
+
 import json
 import numpy
 import math
